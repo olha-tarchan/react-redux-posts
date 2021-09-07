@@ -17,9 +17,9 @@ const PostForm = (props) => {
             title: param.title,
             content: param.content
         }
-        console.log("FORM Props", props)
         props.createPost(newPost);
         setParam({title: '', content: ''});
+        props.showPanel(false);
     }
 
     const changeInputHandler = event => {

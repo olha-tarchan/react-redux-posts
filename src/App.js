@@ -10,6 +10,10 @@ import {Container, Row, Col} from "react-bootstrap";
 
 function App() {
   const [open, setOpen] = useState(false);
+
+  const closePanelAfterSave = () => {
+    setOpen(false);
+  }
   return (
       <>
         <Navbar/>
@@ -32,7 +36,7 @@ function App() {
               <div>
                 <Collapse in={open}>
                   <div id="example-collapse-text" className="mt-3">
-                    <PostForm/>
+                    <PostForm showPanel={closePanelAfterSave.bind(this)}/>
                   </div>
                 </Collapse>
               </div>
