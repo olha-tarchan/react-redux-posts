@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {connect} from "react-redux";
 import Post from "./Post";
 import {deletePost, editPost} from "../redux/actions/actions";

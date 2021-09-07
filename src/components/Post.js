@@ -3,7 +3,7 @@ import EditPostForm from "./EditPostForm";
 import {UPDATE, HIDE} from "../text";
 import {Card} from "react-bootstrap";
 
-export default ({post, onDelete}) => {
+const Post = ({post, onDelete}) => {
     const [editBlock, setEditBlock] = useState(false);
 
     const handleEditBtn = (changeEditBlock) => {
@@ -34,3 +34,5 @@ export default ({post, onDelete}) => {
         </Card>
     )
 }
+
+export default Post;
